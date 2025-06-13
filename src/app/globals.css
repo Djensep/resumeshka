@@ -5,4 +5,15 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background-color: #060010;
+}
+
+.container {
+    width: 968px;
+    margin: 20px auto;
 }
