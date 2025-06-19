@@ -1,28 +1,23 @@
 import Image from "next/image";
 import styles from "./Header.module.css";
 
-const navLinks = [
-    { href: "/", text: "About me" },
-    { href: "/", text: "My projects" },
-    { href: "/", text: "Technologies" },
-    { href: "/", text: "Contacts" },
-];
-
 export const Header = () => {
     return (
-        <header className="container">
-            <nav className={styles.nav}>
-                <div>
-                    <Image src="/logo.jpg" width={40} height={40} alt={""} />
-                </div>
-                <ul className={styles.navList}>
-                    {navLinks.map((link, index) => (
-                        <li key={index}>
-                            <a href={link.href}>{link.text}</a>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
+        <header>
+            <div className="container">
+                <nav className={styles.nav}>
+                    <div className={styles.logoBlock}>
+                        <div>
+                            <Image src="/logo.jpg" width={40} height={40} alt={""} />
+                        </div>
+                        <div className={styles.logoInfo}>
+                            <h3>Lee Djen Sep</h3>
+                            <span>23 lvl</span>
+                        </div>
+                    </div>
+                    <div></div>
+                </nav>
+            </div>
         </header>
     );
 };

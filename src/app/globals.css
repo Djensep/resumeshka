@@ -1,7 +1,31 @@
+@font-face {
+    font-family: Pixel;
+    src: url("/fonts/pixel.ttf");
+}
+
 :root {
+    --text-red-200: #ff3860;
+    --text-red-300: #c8002f;
+    --text-red-400: #a1001a;
+    --text-red-700: #3a0a12;
+    --text-red-800: #2d050a;
+    --text-pink-200: #6366f1;
+    --text-pink-300: #ff4ecd;
+    --text-pink-400: #a259ff;
+    --text-pink-500: #8b5cf6;
+    --text-green-300: #aaff00;
+    --text-green-400: #00ff88cc;
+    --text-green-500: #00ff8899;
+    --text-green-600: #0f0;
+    --text-blue-300: #00eaff;
+    --text-dark-300: #181825;
+    --text-dark-200: #232136;
+    --text-grey-200: #666;
+    --text-grey-400: #334155;
 }
 
 * {
+    font-family: Pixel;
     box-sizing: border-box;
     padding: 0;
     margin: 0;

@@ -1,9 +1,22 @@
-.promo {
+.promoSection {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 15px;
     border: 1px solid white;
     height: 50vh;
     border-radius: 5px;
+}
+.gif {
+    width: 150px;
+    height: 150px;
+}
+.gif > img {
+    width: 100%;
+}
+
+.logoInfo {
+    display: flex;
+    flex-direction: column;
 }
